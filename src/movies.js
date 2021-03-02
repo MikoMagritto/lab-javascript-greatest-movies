@@ -29,9 +29,10 @@ function ratesAverage (movies) {
   let sumRate = movies.reduce(function (sum, note) {
     return sum + note.rate;
 }, 0);
-  
   let averageRate = Math.round(parseFloat((sumRate/movies.length)*100))/100
     return averageRate;
+}
+console.log(ratesAverage(movies));
 }
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
